@@ -1,4 +1,4 @@
-# Commands for the harkach bot at [https://wavez.fm/~/harkach](https://wavez.fm/~/harkach)
+# Commands for the [harkach](https://wavez.fm/~/harkach) bot
 
 | Command      | Description                                                   | Usage                            |
 | :----------- | :------------------------------------------------------------ | :------------------------------- |
