@@ -15,7 +15,6 @@
 | !ghostbuster | Check if a user is in the room                                | !ghostbuster <user>              |
 | !hug         | Hug someone                                                   | !hug [user]                      |
 | !joke        | Tell a joke                                                   |                                  |
-| !meme        | Fetch a meme from Reddit                                      |                                  |
 | !roast       | Deliver a mild roast                                          | !roast [user]                    |
 | !roll        | Generate a random number                                      | !roll [min] [max]                |
 | !rps         | Rock, paper, scissors                                         | !rps <rock \| paper \| scissors> |
