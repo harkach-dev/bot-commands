@@ -15,7 +15,6 @@
 | !ghostbuster | Проверить, есть ли юзер в комнате                              | !ghostbuster <user>              |
 | !hug         | Обнять анона                                                   | !hug [user]                      |
 | !joke        | (Не смешная) шутка                                             |                                  |
-| !meme        | Случайный (не смешной) мем с Реддита                           |                                  |
 | !roast       | Прожарить кого-то                                              | !roast [user]                    |
 | !roll        | Генератор случайных чисел                                      | !roll [min] [max]                |
 | !rps         | Камень, ножницы, бумага                                        | !rps <rock \| paper \| scissors> |
