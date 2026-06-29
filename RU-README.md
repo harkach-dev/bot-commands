@@ -10,7 +10,7 @@
 | !cookie   | Дать кому-то печеньку                                          | !cookie [user]                   |
 | !hug      | Обнять анона                                                   | !hug [user]                      |
 | !roast    | Прожарить кого-то                                              | !roast [user]                    |
-| !joke     | (Не смешная) шутка                                             |                                  |
+| !joke     | (Несмешная) шутка                                             |                                  |
 | !roll     | Генератор случайных чисел                                      | !roll [min] [max]                |
 | !rps      | Камень, ножницы, бумага                                        | !rps <rock \| paper \| scissors> |
 | !8ball    | Задать вопрос на да/нет                                        | !8ball <question>                |
