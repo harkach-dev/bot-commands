@@ -31,7 +31,6 @@
 | Command   | Description                 | Usage           |
 | :-------- | :-------------------------- | --------------- |
 | !weather  | Show the weather for a city | !weather [city] |
-| !mediaid  | Show the current track ID   |                 |
 | !roulette | Open the roulette           |                 |
 | !link     | Show the current track link |                 |
-
+| !mediaid  | Show the current track ID   |                 |
