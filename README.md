@@ -21,7 +21,6 @@
 | !topwoot  | Leaderboard for woots given                                   |                                  |
 | !ship     | Ship two people                                               | !ship [user1] [user2]            |
 | !slap     | Give a playful tap                                            | !slap [user]                     |
-| !summon   | Summon something mysterious                                   |                                  |
 | !thor     | Spin Thor's hammer on the waitlist                            | !thor                            |
 | !join     | Join the roulette                                             |                                  |
 | !leave    | Leave the roulette                                            |                                  |
