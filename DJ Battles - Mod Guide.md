@@ -15,7 +15,7 @@ As a moderator, you have full control over starting and managing DJ battles in t
 > 2. **Participant Range**: A battle must have **between 2 and 10 distinct DJs**.
 > 3. **Participating in Battles**: Authorized moderators ARE allowed to join battles as competitors and are allowed to stop or cancel battles they compete in (an audit notice will be posted in chat).
 > 4. **No Self-Adjusting Scores**: Participating moderators are **strictly forbidden** from manually adjusting scores in any battle where they are competing.
-> 5. **Double Quotes for Reasons**: Custom adjustment reasons MUST be enclosed in double quotes (e.g. `"Bonus for epic transition"`).
+> 5. **Parentheses for Reasons**: Custom adjustment reasons MUST be enclosed in parentheses (e.g. `(Bonus for epic transition)`).
 
 ---
 
@@ -26,8 +26,8 @@ As a moderator, you have full control over starting and managing DJ battles in t
 | **Start 1v1 Battle**          | `!djbattle start @Alice @Bob`               | Handles **must** start with `@`.            |
 | **Start 3-way 5-song battle** | `!djbattle start @Alice @Bob @Charlie 5`    | Cap must be `1` to `10`.                    |
 | **Stop a battle**             | `!djbattle stop 1`                          | Tie-breaker hierarchy applied.              |
-| **Award bonus points**        | `!djbattle adjust @Alice 1.5 "Awesome set"` | Reason **must** have double quotes `"..."`. |
-| **Deduct points**             | `!djbattle adjust @Bob -0.5 "Mic noise"`    | Max change is `-10.0` to `+10.0`.           |
+| **Award bonus points**        | `!djbattle adjust @Alice 1.5 (Awesome set)` | Reason **must** use parentheses `(...)`.    |
+| **Deduct points**             | `!djbattle adjust @Bob -0.5 (Mic noise)`    | Max change is `-10.0` to `+10.0`.           |
 | **Cancel active battle**      | `!djbattle cancel 1`                        | Deletes battle without saving.              |
 | **Delete past battle record** | `!djbattle delete 5`                        | Requires numeric ID.                        |
 | **Toggle track broadcasts**   | `!djbattle announce on`                     | OFF by default.                             |
@@ -142,26 +142,26 @@ Use this command to manually award bonus points or deduct points from a DJ durin
 #### How to Use It
 
 - **Single active battle (or defaulting scope)**:
-  `!djbattle adjust @dj <points> "[reason]"`
+  `!djbattle adjust @dj <points> (reason)`
 - **Specific battle ID**:
-  `!djbattle adjust @dj <points> <battle_id> "[reason]"`
+  `!djbattle adjust @dj <points> <battle_id> (reason)`
 - **All active battles for that DJ**:
-  `!djbattle adjust @dj <points> all "[reason]"`
+  `!djbattle adjust @dj <points> all (reason)`
 
 #### Parameter Breakdown
 
 1. **Target DJ (`@dj`)**: Must start with `@`.
 2. **Points Delta (`-10.0` to `+10.0`)**: Points to add (e.g. `1.5`, `2`) or subtract (e.g. `-1.0`, `-0.5`).
 3. **Scope (`battle_id` or `all`)** _(Optional if DJ is in 1 battle)_: Specify battle ID or `"all"`. Required if the DJ is competing in multiple active battles.
-4. **Reason (`"your text"`)** _(Optional)_: Must be enclosed in **double quotes `"`**. If omitted, defaults to `"Manual adjustment by @ModName"`.
+4. **Reason (`(your text)`)** _(Optional)_: Must be enclosed in **parentheses `(...)`**. If omitted, defaults to `"Manual adjustment by @ModName"`.
 
 #### Examples of Allowed Usage
 
 ```text
-!djbattle adjust @Alice 1.5 "Great crowd interaction"
-!djbattle adjust @Bob -1.0 "Played overplayed track"
-!djbattle adjust @Alice 2.0 1 "1st place round bonus"
-!djbattle adjust @Alice 0.5 all "Theme night bonus"
+!djbattle adjust @Alice 1.5 (Great crowd interaction)
+!djbattle adjust @Bob -1.0 (Played overplayed track)
+!djbattle adjust @Alice 2.0 1 (1st place round bonus)
+!djbattle adjust @Alice 0.5 all (Theme night bonus)
 ```
 
 #### What You Will See in Chat
@@ -172,11 +172,11 @@ Use this command to manually award bonus points or deduct points from a DJ durin
 
 #### What Does NOT Work / Errors to Avoid
 
-- **Forgetting double quotes around the reason**:
+- **Forgetting parentheses around the reason**:
   - `!djbattle adjust @Alice 1.5 Great track`
-  - _Result_: Error! `Adjustment reason must be enclosed in double quotes (e.g. "1st place bonus").`
+  - _Result_: Error! `Adjustment reason must be enclosed in parentheses, e.g. (1st place bonus).`
 - **Exceeding point limits**:
-  - `!djbattle adjust @Alice 15.0 "Bonus"`
+  - `!djbattle adjust @Alice 15.0 (Bonus)`
   - _Result_: Error! `Score adjustment delta must be a number between -10.0 and +10.0.`
 - **Participating moderator adjusting own battle**:
   - `@ModAlice` tries running `!djbattle adjust @Bob 1.0 1` (where `@ModAlice` is competing in Battle #1).
