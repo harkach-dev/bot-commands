@@ -1,3 +1,5 @@
+Also check out the DJ battle guides for [users](https://github.com/harkach-dev/bot-commands/blob/main/DJ%20Battles%20-%20User%20Guide.md) and [mods](https://github.com/harkach-dev/bot-commands/blob/main/DJ%20Battles%20-%20Mod%20Guide.md).
+
 # Commands for the [harkach](https://wavez.fm/~/harkach) bot
 
 | Command   | Description                                                   | Usage                            |
