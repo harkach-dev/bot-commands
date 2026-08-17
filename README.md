@@ -28,6 +28,7 @@ Also check out the guide for [Connections](https://github.com/harkach-dev/bot-co
 | !thor     | Spin Thor's hammer on the waitlist                            | !thor                            |
 | !join     | Join the roulette                                             |                                  |
 | !leave    | Leave the roulette                                            |                                  |
+| !connections | Scroll to the top to see the link to full documentation    |                                  |
 
 #### Only for DJs and higher:
 
